@@ -12,6 +12,13 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(nav2_waypoint_follower REQUIRED)
 find_package(pluginlib REQUIRED)
+find_package(rclcpp_lifecycle REQUIRED)
+find_package(rclcpp_components REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(nav2_msgs REQUIRED)
+find_package(nav2_util REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(nav2_core REQUIRED)
 
 set(dep_pkgs
     rclcpp
@@ -39,7 +46,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-pluginlib_export_plugin_description_file(nav2_waypoint_follower ddg_waitstep_at_waypoint.xml)
 ament_target_dependencies(${lib_name} ${dep_pkgs})
+pluginlib_export_plugin_description_file(ddg_waitstep_at_waypoint_plugin ddg_waitstep_at_waypoint.xml)
 
 ament_package()

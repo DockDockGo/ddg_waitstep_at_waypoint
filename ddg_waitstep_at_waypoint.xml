@@ -1,4 +1,4 @@
-<library path="ddg_waitstep_at_waypoint_plugin_core">
+<library path="ddg_waitstep_at_waypoint_plugin">
   <class name="ddg_waitstep_at_waypoint_plugin/WaitstepAtWaypoint" type="ddg_waitstep_at_waypoint_plugin::WaitstepAtWaypoint" base_class_type="nav2_core::WaypointTaskExecutor">
     <description>This plugin executes a waitstep when repeat waypoints are received.</description>
   </class>

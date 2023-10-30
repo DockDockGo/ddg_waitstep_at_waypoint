@@ -15,9 +15,14 @@
   <depend>geometry_msgs</depend>
   <depend>pluginlib</depend>
   <depend>rclcpp</depend>
+  <depend>nav_msgs</depend>
+  <depend>nav2_msgs</depend>
+  <depend>nav2_util</depend>
+  <depend>nav2_core</depend>
+  <depend>tf2_ros</depend>
 
   <export>
-    <costmap_2d plugin="${prefix}/ddg_waitstep_at_waypoint.xml" />
     <build_type>ament_cmake</build_type>
+    <ddg_waitstep_at_waypoint_plugin plugin="${prefix}/ddg_waitstep_at_waypoint.xml" />
   </export>
 </package>
