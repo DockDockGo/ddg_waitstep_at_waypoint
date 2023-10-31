@@ -16,8 +16,11 @@
   <depend>pluginlib</depend>
   <depend>rclcpp</depend>
 
+  <build_depend>nav2_core</build_depend>
+  <exec_depend>nav2_core</exec_depend>
+
   <export>
-    <costmap_2d plugin="${prefix}/ddg_waitstep_at_waypoint.xml" />
+    <nav2_core plugin="${prefix}/ddg_waitstep_at_waypoint.xml" />
     <build_type>ament_cmake</build_type>
   </export>
 </package>
